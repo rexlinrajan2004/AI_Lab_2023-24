@@ -15,18 +15,25 @@ To write a logic program to design a circuit like half adder and half subtractor
 
 ### Program:
 
+```
+move(1,X,Y,_) :-  
+    write('Move top disk from '), 
+    write(X), 
+    write(' to '), 
+    write(Y), 
+    nl. 
+move(N,X,Y,Z) :- 
+    N>1, 
+    M is N-1, 
+    move(M,X,Z,Y), 
+    move(1,X,Y,_), 
+    move(M,Z,Y,X).
 
-
-
-
-
-
-
-
-
+```
 
 ### Output:
 
+![image](https://github.com/user-attachments/assets/2095d53d-5437-4c6b-b6dd-d0eed0cac4fb)
 
 
 ### Result:
