@@ -16,25 +16,28 @@ To write a logic program to design a circuit like half adder and half subtractor
 ### Program:
 
 ```
-move(1,X,Y,_) :-  
-    write('Move top disk from '), 
-    write(X), 
-    write(' to '), 
-    write(Y), 
-    nl. 
-move(N,X,Y,Z) :- 
-    N>1, 
-    M is N-1, 
-    move(M,X,Z,Y), 
-    move(1,X,Y,_), 
-    move(M,Z,Y,X).
-
+and(0,0,0).
+and(0,1,0).
+and(1,1,1).
+and(1,0,0).
+xor(0,0,0).
+xor(0,1,1).
+xor(1,0,1).
+xor(1,1,0).
+not(0,1).
+not(1,0).
+halfadder(A,B,S,C):-
+    xor(A,B,S),
+    and(A,B,C).
+halfsubtractor(A,B,Diff,Bo):-
+    xor(A,B,Diff),
+    not(A,X),
+    and(B,X,Bo).
 ```
 
 ### Output:
 
-![image](https://github.com/user-attachments/assets/2095d53d-5437-4c6b-b6dd-d0eed0cac4fb)
-
+![image](https://github.com/user-attachments/assets/0bb4870b-f7ba-451a-81c4-85a2b0ebf3cd)
 
 ### Result:
 Thus the truth table of circuit verified sucessfully.
