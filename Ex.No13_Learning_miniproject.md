@@ -78,7 +78,7 @@ print(f'Perplexity: {perplexity[0]:.2f}')
 ```
 ### Output:
 
-![ot1](https://github.com/user-attachments/assets/dc4dcc1e-63eb-4335-a411-47a78921456f)
+![image](https://github.com/user-attachments/assets/61aa20ab-17f1-4c40-abdf-0fb5e567d28f)
 ![image](https://github.com/user-attachments/assets/9061c5bd-47d7-4368-93b6-a1a4c0a2b525)
 ![image](https://github.com/user-attachments/assets/6a2c8f98-5d32-4c2c-b4ef-50bc21878c56)
 
