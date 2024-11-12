@@ -1,4 +1,4 @@
-# Ex.No: 10  NEXT WORD PREDICTION USING LSTM
+# Ex.No: 13  NEXT WORD PREDICTION USING LSTM
 ### DATE: 24.10.2024                                                                           
 ### REGISTER NUMBER : 212222220034
 ### AIM: 
